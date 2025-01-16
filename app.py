@@ -12,7 +12,7 @@ import google.generativeai as genai
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def get_gemini_response(input,pdf_cotent,prompt):
-    model=genai.GenerativeModel('gemini-pro-vision')
+    model=genai.GenerativeModel('gemini-2.0-flash-exp')
     response=model.generate_content([input,pdf_content[0],prompt])
     return response.text
 
@@ -40,8 +40,8 @@ def input_pdf_setup(uploaded_file):
 
 ## Streamlit App
 
-st.set_page_config(page_title="ATS Resume EXpert")
-st.header("ATS Tracking System")
+st.set_page_config(page_title="Rezume Analyzer")
+st.header("Resume Analyzer")
 input_text=st.text_area("Job Description: ",key="input")
 uploaded_file=st.file_uploader("Upload your resume(PDF)...",type=["pdf"])
 
