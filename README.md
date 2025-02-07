@@ -59,7 +59,7 @@ The **Resume Analyzer** project uses an advanced Generative AI model (`gemini-2.
 
 ## Screenshots
 
-![Screenshot 2025-01-16 143701](https://github.com/user-attachments/assets/9a92f334-66ca-484c-9f0d-78cb4e4f7696)
+Comming Soon
 
 ## Contributing
 Contributions are welcome! Please fork this repository and submit a pull request.
